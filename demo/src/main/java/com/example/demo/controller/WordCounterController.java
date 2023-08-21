@@ -18,7 +18,7 @@ public class WordCounterController {
     }
 
     @PutMapping(value = "/add")
-    public void getCount(@RequestBody List<String> words) {
+    public void addWords(@RequestBody List<String> words) {
         wordCounter.addWords(words);
     }
 
